@@ -201,6 +201,21 @@ html,body{
     -o-transition: ease 0.3s;
     transition: ease 0.3s;
 }
+.abutton{
+    display: inline-block;
+    line-height: 34px;
+    text-align: center;
+    -webkit-appearance: none;
+    vertical-align: middle;
+    text-decoration: none;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+.abutton:hover{
+    text-decoration: none;
+
+}
 .button{
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
@@ -213,6 +228,7 @@ html,body{
 }
 .button:hover{
     cursor: pointer;
+    color: #fff;
 }
 .button:active{
     -webkit-transition: ease 0.3s;
