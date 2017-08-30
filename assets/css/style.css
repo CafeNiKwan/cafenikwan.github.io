@@ -5,9 +5,15 @@ html,body,h1,h2,h3,h4,h5,h6,p,a,input,textarea,div,button{
 html,body{
     background-color: #1b1b1b;
 }
+a:hover{
+    color: #fff;
+}
 .container-width{
     max-width: 960px;
     padding: 0 10px 0 10px;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
 }
 .topbar{
     background-color: #5a5756;
@@ -174,6 +180,9 @@ html,body{
     padding: 15px 0;
 
 }
+.alogo{
+    position: absolute;
+}
 /*utilities*/
 .padding-50-0{
     padding: 50px 0;
@@ -183,6 +192,7 @@ html,body{
 }
 .gutter-20>*{
     padding-left: 20px;
+    margin-bottom: 20px;
 }
 .text-black,.text-black:hover{
     color: #1b1b1b;
@@ -252,8 +262,63 @@ html,body{
 /*override*/
 
 /*responsive*/
-@media (max-width: 414px){
+@media (max-width: 736px){
+    .container-width{
+        width: 100%;
+        padding: 0 10px 0 10px;
+        -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        box-sizing: border-box;
+    }
+    a.alogo{
+        position: relative;
+        display: block;
 
+
+
+    }
+    a.alogo>img{
+        margin: 0 auto 20px auto!important;
+        display: block;
+    }
+    .button{
+        width: 100%;
+    }
+    .banner{
+        height: 150px;
+    }
+    .plogo{
+        display: block;
+    }
+}
+@media (max-width: 414px){
+    .container-width{
+        width: 100%;
+        padding: 0 10px 0 10px;
+        -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        box-sizing: border-box;
+    }
+    a.alogo{
+        position: relative;
+        display: block;
+
+
+
+    }
+    a.alogo>img{
+        margin: 0 auto 20px auto!important;
+        display: block;
+    }
+    .button{
+        width: 100%;
+    }
+    .banner{
+        height: 150px;
+    }
+    .plogo{
+        display: block;
+    }
 }
 @media (max-width: 375px){
 
